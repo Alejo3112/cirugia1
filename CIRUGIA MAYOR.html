@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title> LA CIRUGIA-CIRUGIA MAYOR</title>
+<style>
+  
+  @import url('https://fons.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flx;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;  
+  }
+
+  p{
+    padding: 0 2rem;
+        font-size: 1.33rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+  }
+  ul{
+    position: relative;
+    display: flex;
+    gap: 25px
+  }
+  ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+
+  ul li:hover::before{
+    opacity: 1;
+  }
+  ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 1;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+  ul li:hover::after{
+    opacity: 0.5;
+  }
+  ul li i{
+    color: #777;
+    font-size:  1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+  }
+  ul li span{
+    position: absolute;
+  }
+  ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+   nav {
+
+     width:100%;
+     text-align: center;
+    
+   }
+
+   label{
+     padding:20px;
+     font-size: 25px;
+   }
+
+   a:link{
+    color: blueviolet;
+   }
+
+   a:active{
+    color: red;
+   }
+   a:hover{
+    color: lightgreen;
+   }
+
+   a:visited {
+            
+            color: yellow;
+  }
+
+   body{
+     background: #36D1DC;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+   }
+   
+   section{
+     
+     margin: 40px;
+     font-size: 24px;
+   }
+</style>
+</head>
+
+<body>
+  <nav>
+    <label> <a href="INICIO.html"target="_blak"> INICIO </a> </label>
+    <label> <a href="ANESTESIA.html"target="_blak"> ANESTECIA </a> </label>
+    <label> <a href="CIRUGIA MAYOR.html"target="_blak"> CIRUGIA MAYOR </a> </label>
+    <label> <a href="CIRUGIA MENOR.html"target="_blak"> CIRUGIA MENOR </a> </label>
+    <label> <a href="RIESGO QUIRURGICO.html"target="_blak"> RIESGO QUIRURGICO </a> </label>
+    <label> <a href="EL QUIROFANO.html"target="_blak"> EL QUIROFANO </a> </label>
+  </nav>
+  <section>
+     <h1><center>CIRUGIA MAYOR</center></h1>
+
+<p><b>¿QUE ES?</P></b>
+
+<P align="justify">La cirugia mayor conlleva casi siempre la apertura de una de las principales cavidades del cuerpo: abdomen, torax o craneo. 
+La apertura del abdomen se denomina laparotomia, la apertura del torax se denomina toracotomia, y la apertura del craneo se denomina craneotomia. 
+La cirugia mayor puede comprometer organos vitales. Generalmente, la intervencion se lleva a cabo con anestesia general en un quirofano y por parte de un equipo especializado de medicos. 
+Por lo general, despues de una cirugia mayor se requiere una estancia de una noche como minimo, pero en la actualidad algunos procedimientos quirurgicos mayores se realizan de forma segura en un entorno ambulatorio, ya sea en un hospital o en un centro de cirugia ambulatoria independiente. 
+Los medicos consideran muchos factores para determinar si un procedimiento quirurgico mayor se puede realizar de forma ambulatoria, incluyendo la salud general de la persona y el riesgo de complicaciones, la complejidad de la cirugia y la presencia de un hospital cercano en caso de que la persona necesite ser trasladada.</P>
+     
+<div style="text-align:center;">
+  <img src="IMAGENES/cirugiamayor.png" style="width:500px; padding:100px;"/>
+ </div>
+
+<p> <b> Cirugia Mayor Ambulatoria </b></p>
+
+<p align="justify">La cirugia mayor ambulatoria constituye un ejemplo de innovacion tecnologica de proceso, mediante el cual se logra que en determinadas intervenciones quirurgicas 
+en pacientes seleccionados, e independientemente del tipo de anestesia utilizada, puedan acudir al hospital el dia de la intervencion programada y despues de un periodo de recuperaciin corto, 
+recibir el alta hospitalaria en las primeras horas del posoperatorio; el paciente regresa a su domicilio el mismo dia que se realiza la intervencion tras una vigilancia directa y repetida hasta el momento en 
+que se cumplan los criterios de alta aceptados; ello permite, por tanto, prescindir de la ocupacion de una cama para su ingreso. De este concepto se excluyen las intervenciones de gran simplicidad tecnica que se 
+realizan bajo anestesia local con alta inmediata sin periodo de vigilancia especial, las que reciben coloquialmente el adjetivo de "locales" o "ambulatorias" y que actualmente se engloban bajo el nombre de cirugia menor ambulatoria.</p>
+
+<p align="justify">El concepto de cirugia mayor ambulatoria es diferente al de CCE o de alta precoz al ser esta ultima aquella que constituye los programas de trabajo que resuelven afecciones que necesitan cirugia mayor con estancias entre uno y tres dias.
+Tambien el procedimiento realizado en un paciente con estadia menor de 24 horas y con pernoctacion en el centro sanitario se considera CCE.Esta tambien incluye intervenciones de mayor dificultad y duracion superior a los 60 minutos, algunas con penetracion intracavitaria en 
+las que es recomendable un control directo en este centro, al menos la primera noche, especialmente en pacientes con enfermedades medicas concomitantes que pudieran descompensarse.<p>
+
+<div style="text-align:center;">
+    <img src="IMAGENES/cirugiamayor1.jpg" style="width:500px; padding:100px;"/>
+   </div>
+
+<p><b><a href="INSTRUMENTACION GENERAL.html">INSTRUMENTACION BASICA PARA CIRUGIA MAYOR</b></a></p>
+
+
+<p>Esta formada por:</p>
+
+<ol>
+ <li>Pinza Judo-Allis.</li>
+ <li>Pinzas Crile curvas y rectas.</li>
+ <li>Pinzas Kellis curvas y rectas.</li>
+ <li>Pinzas   Kocher curvas y rectas.</li>
+ <li>Pinzas de disecciones (con dientes, sin dientes), anillo curvo y recto.</li>
+ <li>Separador de Farabeuf.</li>
+ <li>Separador Deaver finos.</li>
+ <li>Canula de aspiracion de Yankauer.</li>
+ <li>Canula de intestino o Poole.</li>
+ <li>Riñonera.</li>
+ <li>Pinzas de campo-o-erinas.</li>
+</ol>
+
+<div style="text-align:center;">
+  <img src="IMAGENES/cirugiamayor2.jpg" style="width:500px; padding:100px;"/>
+ </div>
+
+<p>Esta instrumentacion es la basica o la principal para una Cirugia de rango mayor, pero puede a ver otra instumentacion para una Cirugia mayor especifica como lo puede ser Una cirugia de torax,Estomago,Vesicula,Prostata,Tiroides,Riñon,amputacion de extremidades, una cirugia vascular,etc..</p>
+
+
+
+  </section>
+
+  <ul>
+    <li style="--i:#a955ff;--j:#ea51ff;">
+      <span class="icon"><i class="fa fa-facebook"></i></span>
+      <a href="https://es-la.facebook.com/"target="_blak" span class="titulo">facebook</a></span>
+    </li>
+    
+    <li style="--i:#56CCF2;--j:#2F80ED;">
+      <span class="icon"><i class="fa fa-twitter"></i></span>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=
+      %7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D
+      "target="_blak" span class="titulo">twitter</a></span>
+      
+    </li>
+    
+    <li style="--i:#86be6b;--j:#1baf16;">
+      <span class="icon"><i class="fa fa-whatsapp"></i></span>
+     <a href="https://web.whatsapp.com/" target="_blank"span class="titulo">whatsapp</a></span>
+    </li>
+    
+    <li style="--i:#80FF72;--j:#5ec3d4;">
+      <span class="icon"><i class="fa fa-linkedin"></i></span>
+      <a href="https://www.linkedin.com/login/es"target="_blak" span class="titulo">linkedin</a></span>
+    </li>
+    
+     <li style="--i:#FFA9C6;--j:#F434E2;">
+      <span class="icon"><i class="fa fa-instagram"></i></span>
+      <a href="https://www.instagram.com/"target="_blak"span class="titulo">instagrama</a>
+    </li>
+  </ul>
+   
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

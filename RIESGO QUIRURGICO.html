@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet"    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>RIESGO QUIRURGICO</title>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   }
+   body{
+    display: flx;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;  
+  }
+
+  p{
+    padding: 0 2rem;
+        font-size: 1.33rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+  }
+  ul{
+    position: relative;
+    display: flex;
+    gap: 25px
+  }
+  ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+
+  ul li:hover::before{
+    opacity: 1;
+  }
+  ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 1;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+  ul li:hover::after{
+    opacity: 0.5;
+  }
+  ul li i{
+    color: #777;
+    font-size:  1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+  }
+  ul li span{
+    position: absolute;
+  }
+  ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+   nav {
+
+     width:100%;
+     text-align: center;
+
+   }
+
+   label{
+     padding:20px;
+     font-size: 25px;
+   }
+
+   a:link{
+    color: blueviolet;
+   }
+
+   a:active{
+    color: red;
+   }
+   a:hover{
+    color: lightgreen;
+   }
+
+   a:visited {
+            
+            color: yellow;
+  }
+
+   body{
+     background: #36D1DC;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+   }
+   
+   section{
+     margin:40px;
+     font-size: 25px;
+     
+     
+   }
+  
+ .container{
+    display: flex;
+    justify-content: center;
+    
+   }
+   .imagen{
+    width: 350px;
+    margin: 1 10px;
+   }
+</style>
+</head>
+
+<body>
+   
+
+  <nav>
+    <label> <a href="INICIO.html"target="_blak"> INICIO </a> </label>
+    <label> <a href="ANESTESIA.html"target="_blak"> ANESTECIA </a> </label>
+    <label> <a href="CIRUGIA MAYOR.html"target="_blak"> CIRUGIA MAYOR </a> </label>
+    <label> <a href="CIRUGIA MENOR.html"target="_blak"> CIRUGIA MENOR </a> </label>
+    <label> <a href="RIESGO QUIRURGICO.html"target="_blak"> RIESGO QUIRURGICO </a> </label>
+    <label> <a href="EL QUIROFANO.html"target="_blak"> EL QUIROFANO </a> </label>
+  </nav>
+  <section>
+     <h1><center>RIESGO QUIRURGICO</center></h1>
+
+<p><b>¿QUE ES?</P></b>
+
+<p align="justify">Los riesgos de la cirugia (es decir, la probabilidad de que la cirugia cause la muerte o un problema grave) dependen del tipo de cirugia y de las caracteristicas de la persona.</P>
+     
+<p align="justify">El riesgo quirurgico es una forma de evaluacion del estado clinico y condiciones de salud de la persona que va a pasar por una cirugia, de forma que sean identificados los riesgos y 
+complicaciones a lo largo de todo el periodo antes, durante y despues de la cirugia.</p>
+
+<p align="justify">Este riesgo es calculado a traves de la evaluaciin clinica del medico y la solicitud de algunos examenes, ademas, existen algunos protocolos que orientan mejor el raciocinio medico,
+como el ASA, Lee y ACP, por ejemplo.</p>
+
+<p align="justify">Cualquier medico puede realizar esta evaluacion, pero, generalmente, es hecha por el medico general, cardiologo o anestesiologo. De esta forma, es posible que sean tomados algunos cuidados 
+particulares para cada persona antes del procedimiento, como la solicitud de examenes mas apropiados o la realizacion de tratamientos para disminuir el riesgo.<p>
+
+  <div style="text-align:center;">
+  <img src="IMAGENES/Riesgoquirurgico.jfif" style="width:500px; padding:100px;"/>
+ </div>
+<p><b>TIPOS DE CIRUGIA DE MAYOR RIESGO</b><p>
+
+<p>Los tipos de cirugia que tienen mayor riesgo son</p>
+
+<ol>
+ <li>Cirugia Cardiaca o pulmonar.</li>
+ <li>Cirugia Hepatica.</li>
+ <li>Las cirugias abdominales que 
+     necesitan mucho tiempo para poder completarse 
+     o tienen mayor riesgo de que se produzca una hemorragia 
+     importante.</li>
+ <li>Extirpacion de la glandula de la prostata.</li>
+ <li>Intervencion mayores en los huesos y las articulaciones(por ejemplo reemplazo de cadera).</li>
+</ol>
+<div class="container">
+
+  <img class="imagenes" src="IMAGENES/riesgoquirurgico1.jpg" style="width:500px; padding:100px;"/>
+  <img class="imagenes" src="IMAGENES/riesgoquirurgico2.png" style="width:500px; padding:100px;"/>
+  <img class="imagenes" src="IMAGENES/riesgoquirurgico3.jpg" style="width:500px; padding:100px;"/>
+  <img class="imagenes" src="IMAGENES/riesgoquirurgico4.png" style="width:500px; padding:100px;"/>
+  <img class="imagenes" src="IMAGENES/riesgoquirurgico5.jpg" style="width:500px; padding:100px;"/>
+
+ </div>
+
+<p><b>PROBLEMAS DE SALUD DE MAYOR RIESGO</b><p>
+<p align="justify">Por lo general, cuanto peor es el estado de salud de una persona, mayor es el riesgo de la cirugia. Algunos problemas de salud que aumentan el riesgo quirurgico son:</p>
+
+<ol>
+  <li type="circle">Antecedentes y factores de riesgo de arteriopatia coronaria.</li>
+  <li type="circle">Antecedentes de insuficiencia cardiaca.</li>
+  <li type="circle">Antecedentes de ictus o accidente isquimico transitorio.</li>
+  <li type="circle">Sintomas de dolor toracico causado por enfermedades de las arterias coronarias (angina).</li>
+  <li type="circle">Desnutricion (frecuente en personas mayores internadas en establecimientos sanitarios).</li>
+  <li type="circle">Enfermedades graves de pulmon o higado.</li>
+  <li type="circle">Nefropatia cronica.</li>
+  <li type="circle">Sistema inmunitario debilitado (por ejemplo, debido al tratamiento con corticoesteroides a largo plazo).</li>
+  <li type="circle">Diabetes que necesita tratamiento con insulina.</li>
+  <li type="circle">Obesidad.</li>
+</ol>
+
+<p align="justify">Los riesgos suelen ser mas elevados en personas de edad avanzada (vase Edad y salud: riesgo quirurgico y edad). Sin embargo, dependen mas del estado de salud general que de la edad. 
+Las enfermedades cronicas que aumentan el riesgo de la cirugia, asi como otras alteraciones que pueden solucionarse con tratamiento (como la deshidratacion, las infecciones, los desequilibrios en los fluidos corporales y electrolitos, y en particular 
+la insuficiencia cardiaca y la angina) deben controlarse lo mejor posible mediante tratamiento antes de una operacion.</p>
+
+  </section>
+  <ul>
+    <li style="--i:#a955ff;--j:#ea51ff;">
+      <span class="icon"><i class="fa fa-facebook"></i></span>
+      <a href="https://es-la.facebook.com/"target="_blak" span class="titulo">facebook</a></span>
+    </li>
+    
+    <li style="--i:#56CCF2;--j:#2F80ED;">
+      <span class="icon"><i class="fa fa-twitter"></i></span>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=
+      %7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D
+      "target="_blak" span class="titulo">twitter</a></span>
+      
+    </li>
+    
+    <li style="--i:#86be6b;--j:#1baf16;">
+      <span class="icon"><i class="fa fa-whatsapp"></i></span>
+     <a href="https://web.whatsapp.com/" target="_blank"span class="titulo">whatsapp</a></span>
+    </li>
+    
+    <li style="--i:#80FF72;--j:#5ec3d4;">
+      <span class="icon"><i class="fa fa-linkedin"></i></span>
+      <a href="https://www.linkedin.com/login/es"target="_blak" span class="titulo">linkedin</a></span>
+    </li>
+    
+     <li style="--i:#FFA9C6;--j:#F434E2;">
+      <span class="icon"><i class="fa fa-instagram"></i></span>
+      <a href="https://www.instagram.com/"target="_blak"span class="titulo">instagrama</a></span>
+    </li>
+    </ul>
+</body>
+</html>

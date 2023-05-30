@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet"    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <em><title>El QUIROFANO</title></em>
+
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   }
+   body{
+    display: flx;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;  
+  }
+  ul{
+    position: relative;
+    display: flex;
+    gap: 25px
+  }
+  ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+
+  ul li:hover::before{
+    opacity: 1;
+  }
+  ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 1;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+  ul li:hover::after{
+    opacity: 0.5;
+  }
+  ul li i{
+    color: #777;
+    font-size:  1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+  }
+  ul li span{
+    position: absolute;
+  }
+  ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+   nav {
+
+     width:100%;
+     text-align: center;
+   }
+
+   label{
+     padding:20px;
+     font-size: 25px;
+   }
+
+   a:link{
+    color: blueviolet;
+   }
+
+   a:active{
+    color: red;
+   }
+   a:hover{
+    color: lightgreen;
+   }
+
+   a:visited {
+            
+            color: yellow;
+  }
+
+   body{
+     background: #36D1DC;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+   }
+   
+   section{
+     margin: 40px;
+     font-size: 24px;
+   }
+   p{
+    margin: 15px;
+   }
+    
+</style>
+</head>
+
+<body>
+   
+
+  <nav>
+    <label> <a href="INICIO.html"target="_blak"> INICIO </a> </label>
+    <label> <a href="ANESTESIA.html"target="_blak"> ANESTECIA </a> </label>
+    <label> <a href="CIRUGIA MAYOR.html"target="_blak"> CIRUGIA MAYOR </a> </label>
+    <label> <a href="CIRUGIA MENOR.html"target="_blak"> CIRUGIA MENOR </a> </label>
+    <label> <a href="RIESGO QUIRURGICO.html"target="_blak"> RIESGO QUIRURGICO </a> </label>
+    <label> <a href="EL QUIROFANO.html"target="_blak"> EL QUIROFANO </a> </label>
+  </nav>
+  <section>
+     <h1><center>EL QUIROFANO</center></h1>
+
+<p><b>¿QUE ES?</P></b>
+
+<p align="justify">Quirofano es un termino que, en su acepcion original, referia a un espacio para realizar intervenciones quirurgicas cuyo diseño permitia observar la operacion a traves de un vidrio. 
+En la actualidad, se conoce como quirofano a cualquier lugar que este destinado a la realizacion de intervenciones de tipo quirurgico.</P>
+     
+<p align="justify">Un quirofano, por lo tanto, es una sala de operaciones. Dichas instalaciones cuentan con diversos sectores que albergan todo lo necesario para el desarrollo de una cirugia y para afrontar sus posibles 
+consecuencias, incluyendo complicaciones que deriven de la intervencion.</p>
+
+<p align="justify">Aunque formen parte de un hospital, los quirofanos se encuentran aislados del resto de las salas para minimizar las posibilidades de que se produzca una infeccion en el paciente. Dentro del quirofano,
+trabajan cirujanos, anestesistas, enfermeras, instrumentistas y otros profesionales.</p>
+
+<div style="text-align:center;">
+  <img src="IMAGENES/quirofano.jpg" style="width:500px; padding:100px;"/>
+ </div>
+
+<p align="justify">Dada la importante labor que se desarrolla en los quirofanos, se hace necesario que estos espacios cuenten con unas cuidadas medidas de higiene y seguridad, en pro de la salud de los pacientes que son intervenidos. 
+Por ese motivo, los profesionales que trabajan en un hospital deben tener en cuenta y seguir a rajatabla estas normas al respecto:<p>
+
+  
+<ol>
+  <li type="circle">Deben existir carteles para indicar que se trata de quirofanos y que esta prohibido el paso a personal ajeno.</li>
+  <li type="circle">Tienen que estar aislados acusticamente hablando.</li>
+  <li type="circle">Las paredes deben ser lisas para que asi sea mucho mas facil limpiarlas.</li>
+  <li type="circle">El ambiente que exista dentro de los quirofanos, en pro de evitar las bacterias, debe estar determinado por una temperatura maxima de 21° y una humedad relativa del 50%.</li>
+  <li type="circle">Los profesionales que vayan a participar en una operacion debe estar dotados con pijamas caracteristicos limpios y esterilizados, y ademas deben llevan mascarillas y gorros, al tiempo que se cubren los pies.</li>
+  <li type="circle">De la misma manera, deben lavarse las manos a conciencia y luego despues colocarse los respectivos guantes. Ese lavado debe durante unos cinco minutos aproximadamente, debe hacerse con el producto recomendado y haciendo especial hincapia en las uñas y los dedos.</li>
+</ol>
+
+<div style="text-align:center;">
+  <img src="IMAGENES/quirofano1.jpg" style="width:500px; padding:100px;"/>
+ </div>
+
+<p align="justify">El quirofano debe ocupar una posicion estrategica dentro de la estructura de un hospital. Entre las cuestiones a tener en cuenta, el quirofano debe tener un acceso cercano a la sala de terapia intensiva para el traslado inmediato del paciente.
+
+<p align="justify">Cabe destacar que todos los quirofanos cuentan con un area de acceso restringido, que es donde se desarrollan las operaciones. Alli, los profesionales y los pacientes deben ingresar con una vestimenta especifica para mantener la higiene y evitar la contaminacion presente en los espacios externos.
+
+<p><b>AREAS DE UN QUIROFANO</b></p>
+
+<p><u><a href="AREA NEGRA.html" target="_blank"> AREA NEGRA:</a></u></p>
+
+
+<p align="justify">Primera zona de restriccion, funciona como un espacio de proteccion que incluye admision quirurgica, baños y vestidores. 
+En esta zona se permite el acceso al area quirurgica.</p>
+
+<p><U><a href="AREA GRIS.html" target="_blank">AREA GRIS:</a></U></p>
+<p align="justify">Segunda zona de restriccion. Se requiere portar el uniforme quirurgico completo para su acceso, cuenta con pasillos internos 
+para circulacion del personal y traslado de material quirurgico, recuperacion, cuarto de anestesia, farmacia, central de equipos y cuarto saptico.</p>
+
+<p><U><a href="AREA BLANCA.html" target="_blank"> BLANCA O SALA DE OPERACIONES:</a></U></p>
+<p align="Justify">Es el sitio de mayor restriccion y donde se realiza la intervencion quirurgica, la cual tiene varias especificaciones para su funcion:</p>
+
+<ol>
+  <li>Flujo liminal de aire recambio 20-25/h.</li>
+  <li>Piso resistente al agua y conductor de electricidad.</li>
+  <li>Paredes lisas y sin esquinas recubrimiento de iones de plata</li>
+  <li>Temperatura: 18 a 23°C</li>
+  <li>Mexico: 20°C y 50% humedad</li>
+  <li>Iluminacion convergente, divergente.</li>
+  <li>Ambiental: natural y artificial</li>
+</ol>
+
+<p><b>SERVICIOS EN EL AREA></b></p>
+<p align="Justify">Se cuenta con tres amplias salas de operaciones (quirofanos) completamente renovadas.</p>
+
+<div style="text-align:center;">
+  <img src="IMAGENES/quirofano2.jpg" style="width:500px; padding:100px;"/>
+ </div>
+<ol>
+  <li>Area de pre anestesia.</li>
+  <li>Area de recuperacion.</li>
+  <li>Central de equipos y esterilizacion.</li>
+  <li>Equipos.</li>
+  <li>Farmacia.</li>
+  <li>Cuarto de equipos biomedicos.</li>
+  <li>Saptico.</li>
+  <li>Vestidores.</li>
+</ol>
+
+<p align="justify">Cada sala de operaciones cuenta con elementos imprescindibles dentro de ella:</p>
+
+<ol>
+  <li>Mesa de operaciones o cirugia.</li>
+  <li>Mesa de riñon.</li>
+  <li>Mesa de mayo.</li>
+  <li>Maquina de anestesia.</li>
+  <li>Cuna radiante.</li>
+  <li>Mesas Pasteur.</li>
+  <li>Lamparas quirurgicas.</li>
+  <li>Bancos giratorios.</li>
+  <li>Cubetas de patada.</li>
+  <li>Tripies.</li>
+  <li>Negatoscopio.</li>
+  <li>Electrocauterio.</li>
+  </section>
+  <ul>
+    <li style="--i:#a955ff;--j:#ea51ff;">
+      <span class="icon"><i class="fa fa-facebook"></i></span>
+      <a href="https://es-la.facebook.com/"target="_blak" span class="titulo">facebook</a></span>
+    </li>
+    
+    <li style="--i:#56CCF2;--j:#2F80ED;">
+      <span class="icon"><i class="fa fa-twitter"></i></span>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=
+      %7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D
+      "target="_blak" span class="titulo">twitter</a></span>
+      
+    </li>
+    
+    <li style="--i:#86be6b;--j:#1baf16;">
+      <span class="icon"><i class="fa fa-whatsapp"></i></span>
+     <a href="https://web.whatsapp.com/" target="_blank"span class="titulo">whatsapp</a></span>
+    </li>
+    
+    <li style="--i:#80FF72;--j:#5ec3d4;">
+      <span class="icon"><i class="fa fa-linkedin"></i></span>
+      <a href="https://www.linkedin.com/login/es"target="_blak" span class="titulo">linkedin</a></span>
+    </li>
+    
+     <li style="--i:#FFA9C6;--j:#F434E2;">
+      <span class="icon"><i class="fa fa-instagram"></i></span>
+      <a href="https://www.instagram.com/"target="_blak"span class="titulo">instagrama</a></span>
+    </li>
+    </ul>
+   
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

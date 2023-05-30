@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> LA CIRUGIA-ANESTESIA </title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flx;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;  
+  }
+
+  p{
+    padding: 0 2rem;
+        font-size: 1.33rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+  }
+  ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+  }
+  ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+
+  ul li:hover::before{
+    opacity: 1;
+  }
+  ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 1;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+  ul li:hover::after{
+    opacity: 0.5;
+  }
+  ul li i{
+    color: #777;
+    font-size:  1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+  }
+  ul li span{
+    position: absolute;
+  }
+  ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+    nav {
+
+     width:100%;
+     text-align: center;
+   }
+
+   label{
+     padding:20px;
+     font-size: 25px;
+   }
+
+   a:link{
+    color: blueviolet;
+   }
+
+   a:active{
+    color: red;
+   }
+   a:hover{
+    color: lightgreen;
+   }
+
+   a:visited {
+            
+            color: yellow;
+  }
+
+   body{
+     background: #36D1DC;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+   }
+   
+   section{
+     margin:40px;
+     font-size: 24px;
+     
+     
+   }
+   .container{
+    display: flex;
+    justify-content: center;
+   }
+   .imagen{
+    width: 350px;
+    margin: 0 10px;
+   }
+</style>
+</head>
+
+<body>
+  <nav>
+    <label> <a href="INICIO.html"target="_blak"> INICIO </a> </label>
+    <label> <a href="ANESTESIA.html"target="_blak"> ANESTECIA </a> </label>
+    <label> <a href="CIRUGIA MAYOR.html"target="_blak"> CIRUGIA MAYOR </a> </label>
+    <label> <a href="CIRUGIA MENOR.html"target="_blak"> CIRUGIA MENOR </a> </label>
+    <label> <a href="RIESGO QUIRURGICO.html"target="_blak"> RIESGO QUIRURGICO </a> </label>
+    <label> <a href="EL QUIROFANO.html"target="_blak"> EL QUIROFANO </a> </label>
+  </nav>
+  <section>
+     <h1><center>ANESTESIA</center></h1>
+
+<p><b>¿QUE ES?</P></b>
+
+<P align="justify">Dado que la cirugía suele producir dolor, casi siempre se administra previamente algún tipo de anestesia, analgésico o ambos fármacos. 
+Los anestésicos bloquean la percepción del dolor al producir pérdida de sensibilidad (adormecimiento) o pérdida del conocimiento; 
+son fármacos que se administran para reducir el dolor. Los profesionales encargados de administrarlos son personal sanitario cualificado. 
+Se trata, por lo general, de médicos (anestesiólogos) aunque la legislación de algunos países contempla la competencia en este 
+menester el profesional de enfermería o técnicos sanitarios especializados (enfermeras anestesistas), en cuyo caso actúan bajo la supervisión de un médico anestesiólogo.</P>
+     
+<p> Existen tres tipos de anestesia:</p>
+
+
+<ol>
+ <li>Local.</li>
+ <li>Regional.</li>
+ <li>General.</li>
+</ol>
+                          
+<div class="container">                                                                                                                          
+  <img class="imagen" src="IMAGENES/Anestesia.jpg" style="width:500px; padding:100px;"/>    
+
+  <img class="imagen" src="IMAGENES/Anestesia1.jpg" style="width: 450px; padding:100px;"/>                                                              
+ </div>                                                                                                       
+
+
+<p><b>Anestesia Local y Regional</b></p>
+
+<p align="justify">Estos tipos de anestesia consisten en la inyección de fármacos (como lidocaína o bupivacaína) que insensibilizan solo partes específicas del cuerpo.
+En la anestesia local, el fármaco se inyecta bajo la piel en el punto donde se va a realizar la incisión para insensibilizar solo dicha zona.
+En la anestesia regional, que insensibiliza un área mayor, el fármaco se inyecta en uno o más nervios y se insensibiliza la zona del cuerpo inervada por los mismos. 
+Por ejemplo, la inyección de un fármaco en ciertos nervios permite insensibilizar los dedos de la mano, del pie o zonas concretas de las extremidades. 
+Un tipo de anestesia regional implica la inyección de un fármaco en una vena 
+(anestesia regional intravenosa). Mediante un dispositivo, como un vendaje elástico o un manguito de presión, se comprime la zona donde el miembro se une al cuerpo, reteniendo el fármaco en las venas de esa extremidad. 
+La anestesia regional intravenosa puede insensibilizar una extremidad completa.
+Durante la anestesia local y la anestesia regional, la persona permanece consciente. Sin embargo, a veces se administran ansiolíticos (con un efecto sedante leve) por vía intravenosa para relajar al individuo. 
+En raras ocasiones, la pérdida de sensibilidad, el hormigueo o el dolor pueden persistir en la zona insensibilizada durante días o incluso semanas.</p>
+
+<div style="text-align:center;">
+  <img src="IMAGENES/Anestesia2.jfif" style="width:500px; padding:100px;"/>
+ </div>
+
+<p align="justify">La anestesia raquídea y la anestesia epidural son tipos específicos de anestesia regional, en los que el fármaco se administra alrededor de la médula espinal, en la parte inferior de la espalda. En función del punto de inyección y de la posición del cuerpo, 
+puede insensibilizarse un área extensa (como, por ejemplo, desde la cintura a los dedos de los pies). La anestesia raquídea y la epidural son útiles para operaciones de la parte inferior del cuerpo, como las que se emplean en la cirugía de reparación de hernias, 
+en intervenciones de próstata, recto, vejiga y piernas, y en algunas intervenciones ginecológicas, así como durante el parto. A veces aparece cefalea en los días siguientes a la anestesia raquídea, aunque, por lo general, puede tratarse de forma eficaz.</p>
+
+<p><b>Anestesia General</b></p>
+
+<p align="justify">En la anestesia general se administra un fármaco que circula por el torrente sanguíneo y que deja inconsciente a la persona. 
+El fármaco puede administrarse por vía intravenosa o por inhalación. Dado que el ritmo de la respiración disminuye con la anestesia general, es posible que el anestesiólogo deba introducir un tubo respiratorio en la tráquea. 
+Sin embargo, para intervenciones cortas, dicho tubo no suele ser necesario; en su lugar, el anestesiólogo puede facilitar la respiración utilizando una mascarilla respiratoria manual. Si la operación es larga, un ventilador mecánico permite que el paciente pueda respirar ( ver Ventilación mecánica). 
+Los anestésicos generales afectan los órganos vitales, por lo que el anestesiólogo supervisa estrechamente la frecuencia y el ritmo cardíacos, la respiración, la temperatura corporal y la presión arterial hasta que los fármacos se hayan eliminado. Afortunadamente, los efectos secundarios graves son muy poco frecuentes.<p>
+
+<p align="justify">La anestesia general requiere de cuatro tipos de bloqueos: bloqueo mental (pérdida de la conciencia), bloqueo sensitivo (analgesia), bloqueo motor (relajación muscular) y bloqueo neurovegetativo (pérdida de los reflejos).</p>
+  
+</section>
+
+  <ul>
+    <li style="--i:#a955ff;--j:#ea51ff;">
+      <span class="icon"><i class="fa fa-facebook"></i></span>
+      <a href="https://es-la.facebook.com/"target="_blak" span class="titulo">facebook</a></span>
+    </li>
+    
+    <li style="--i:#56CCF2;--j:#2F80ED;">
+      <span class="icon"><i class="fa fa-twitter"></i></span>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=
+      %7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D
+      "target="_blak" span class="titulo">twitter</a></span>
+      
+    </li>
+    
+    <li style="--i:#86be6b;--j:#1baf16;">
+      <span class="icon"><i class="fa fa-whatsapp"></i></span>
+     <a href="https://web.whatsapp.com/" target="_blank"span class="titulo">whatsapp</a></span>
+    </li>
+    
+    <li style="--i:#80FF72;--j:#5ec3d4;">
+      <span class="icon"><i class="fa fa-linkedin"></i></span>
+      <a href="https://www.linkedin.com/login/es"target="_blak" span class="titulo">linkedin</a></span>
+    </li>
+    
+     <li style="--i:#FFA9C6;--j:#F434E2;">
+      <span class="icon"><i class="fa fa-instagram"></i></span>
+      <a href="https://www.instagram.com/"target="_blak"span class="titulo">instagrama</a>
+    </li>
+  </ul>
+   
+</body>
+</html>

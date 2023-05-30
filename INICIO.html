@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> LA CIRUGIA </title>
+ <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flx;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;  
+  }
+
+  p{
+    padding: 0 2rem;
+        font-size: 1.33rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+  }
+  ul{
+    position: relative;
+    display: flx;
+    gap: 25px
+  }
+  ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+
+  ul li:hover::before{
+    opacity: 1;
+  }
+  ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 1;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+  ul li:hover::after{
+    opacity: 0.5;
+  }
+  ul li i{
+    color: #777;
+    font-size:  1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+  }
+  ul li span{
+    position: absolute;
+  }
+  ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+   body{
+     background: #36D1DC;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+   }
+   nav{
+	font-size: 20px;
+	margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+   label{
+    padding: 20px;
+    font-size: 25px;
+   }
+
+   a:link{
+    color: blueviolet;
+   }
+
+   a:active{
+    color: red;
+   }
+   a:hover{
+    color: lightgreen;
+   }
+
+   a:visited {
+            
+            color: yellow;
+  }
+            
+   section{
+     margin-top:60px;
+     font-size: 24px;
+     
+   }
+
+   .fcc-btn{
+        background-color: #bc2a8d;
+        color: white;
+        padding: 10px 10px;
+        text-decoration: none;
+        position: relative;
+        margin: 50px;
+       
+
+
+        }
+
+    .fcc-btn:hover{
+        background-color: #039917;
+    }
+</style>
+
+</head>
+
+<body>
+  
+  <nav>
+    <label> <a href="INICIO.html"target="_blak"> INICIO </a> </label>
+    <label> <a href="ANESTESIA.html"target="_blak"> ANESTECIA </a> </label>
+    <label> <a href="CIRUGIA MAYOR.html"target="_blak"> CIRUGIA MAYOR </a> </label>
+    <label> <a href="CIRUGIA MENOR.html"target="_blak"> CIRUGIA MENOR </a> </label>
+    <label> <a href="RIESGO QUIRURGICO.html"target="_blak"> RIESGO QUIRURGICO </a> </label>
+    <label> <a href="EL QUIROFANO.html"target="_blak"> EL QUIROFANO </a> </label>
+  </nav>
+  <section>
+     	
+<p><b><center>INTRODUCCION</center></b></p>
+<p align="justify">En esta página vamos a hablar sobre el mundo de la medicina, específicamente de la cirugía y todo lo que tenga que ver con ella desde lo más pequeño hasta los más importante. 
+Existen muchas razones para someterse a una cirugía. Algunas operaciones pueden aliviar o prevenir el dolor. Otras pueden disminuir un síntoma de alguna afección o mejorar alguna función del cuerpo. Algunas cirugías se hacen para detectar un problema. Por ejemplo, un cirujano puede hacerle una biopsia, que implica la extirpación de tejido para examinarlo bajo el microscopio. Algunas operaciones, como la cirugía de corazón, pueden salvarle la vida.
+Algunas operaciones que antes necesitaban de grandes incisiones (cortes en el cuerpo) pueden hacerse con cortes mucho más pequeños. A esto se le llama cirugía laparoscópica. Los cirujanos insertan un tubo delgado con una cámara para ver, y utilizan pequeñas herramientas para realizar la operación.
+Puede haber complicaciones después de una cirugía, incluyendo infecciones, sangrado excesivo, reacciones a la anestesia o lesiones accidentales. Casi siempre las cirugías implican algo de dolor.</p>
+
+  <div style="text-align:center;">
+     <img src="IMAGENES/Cirugia.jpg" style="width:220px; padding:50px;"/>
+  </div>
+
+<h2><center>CIRUGIA</center></h2>
+
+<p>¿QUE ES?<P>
+
+<p align="justify">La cirugía es el término utilizado tradicionalmente para describir los procedimientos (llamados procedimientos quirúrgicos) que implican realizar incisiones o suturar tejidos para tratar enfermedades, lesiones o deformidades. Sin embargo, los avances en las técnicas quirúrgicas han complicado su definición. A veces se utiliza el láser, la radiación u otras técnicas (en lugar del bisturí) para cortar tejidos, y las heridas pueden cerrarse sin sutura.
+En la actualidad diferenciar entre un procedimiento quirúrgico y un procedimiento médico (generalmente considerado como un procedimiento en el que no se realiza ninguna incisión ni sutura sobre los tejidos) no siempre es fácil. Sin embargo, hacer esta distinción no es tan importante como el hecho de que el médico que realice el procedimiento tenga experiencia y una buena formación.
+La cirugía es un área de cuidados extensa que incluye muchas técnicas diferentes. En algunos procedimientos quirúrgicos se extirpa tejido, como por ejemplo un absceso o un tumor; en otros procedimientos, se abren o desbloquean las obstrucciones. Aún existen otros procedimientos en los que se conectan arterias y venas a nuevas posiciones para proporcionar un aporte de sangre adicional a zonas que no recibían suficiente.
+</p>
+
+<div style="text-align:center;">
+     <img src="IMAGENES/cirugia1.jpg" style="width:500px; padding:100px;"/>
+    </div>
+
+    <a class="fcc-btn" href="BOTONES.html">HISTORIA DE LA CIRUGIA</a>
+
+
+
+  </section>
+   
+ <ul>
+      <li style="--i:#a955ff;--j:#ea51ff;">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+        <a href="https://es-la.facebook.com/"target="_blak" span class="titulo">facebook</a></span>
+      </li>
+      
+      <li style="--i:#56CCF2;--j:#2F80ED;">
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+        <a href="https://twitter.com/i/flow/login?input_flow_data=
+        %7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D
+        "target="_blak" span class="titulo">twitter</a></span>
+        
+      </li>
+      
+      <li style="--i:#86be6b;--j:#1baf16;">
+        <span class="icon"><i class="fa fa-whatsapp"></i></span>
+       <a href="https://web.whatsapp.com/" target="_blank"span class="titulo">whatsapp</a></span>
+      </li>
+      
+      <li style="--i:#80FF72;--j:#5ec3d4;">
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+        <a href="https://www.linkedin.com/login/es"target="_blak" span class="titulo">linkedin</a></span>
+      </li>
+      
+       <li style="--i:#FFA9C6;--j:#F434E2;">
+        <span class="icon"><i class="fa fa-instagram"></i></span>
+        <a href="https://www.instagram.com/"target="_blak"span class="titulo">instagrama</a>
+      </li>
+    </ul>
+
+</body>
+</html>

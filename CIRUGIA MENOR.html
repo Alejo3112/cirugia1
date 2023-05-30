@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> LA CIRUGIA-CIRUGIA MENOR</title>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   }
+   body{
+    display: flx;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;  
+  }
+
+  p{
+    padding: 0 2rem;
+        font-size: 1.33rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+  }
+  ul{
+    position: relative;
+    display: flex;
+    gap: 25px
+  }
+  ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+
+  ul li:hover::before{
+    opacity: 1;
+  }
+  ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 1;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+  ul li:hover::after{
+    opacity: 0.5;
+  }
+  ul li i{
+    color: #777;
+    font-size:  1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+  }
+  ul li span{
+    position: absolute;
+  }
+  ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+  nav {
+
+width:100%;
+text-align: center;
+}
+
+label{
+padding:20px;
+font-size: 25px;
+}
+
+a:link{
+    color: blueviolet;
+   }
+
+   a:active{
+    color: red;
+   }
+   a:hover{
+    color: lightgreen;
+   }
+
+   a:visited {
+            
+            color: yellow;
+  }
+
+body{
+background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+section{
+margin: 40px;
+font-size: 24px;
+}
+ </style>
+ </head>
+
+ <body>
+   
+  <nav>
+    <label> <a href="INICIO.html"target="_blak"> INICIO </a> </label>
+    <label> <a href="ANESTESIA.html"target="_blak"> ANESTECIA </a> </label>
+    <label> <a href="CIRUGIA MAYOR.html"target="_blak"> CIRUGIA MAYOR </a> </label>
+    <label> <a href="CIRUGIA MENOR.html"target="_blak"> CIRUGIA MENOR </a> </label>
+    <label> <a href="RIESGO QUIRURGICO.html"target="_blak"> RIESGO QUIRURGICO </a> </label>
+    <label> <a href="EL QUIROFANO.html"target="_blak"> EL QUIROFANO </a> </label>
+  </nav>
+  <section>
+     <h1><center>CIRUGIA MENOR</center></h1>
+
+ <p><b>QUE ES?</P></b>
+
+ <p align="justify">En la cirugia menor no hay apertura de las cavidades mayores del cuerpo. Se puede requerir el uso de anestesia local, regional o general, y se puede llevar a cabo en un servicio de urgencias, en centros de cirugia ambulatoria o 
+ en la propia consulta del medico. No suele afectar a organos vitales, por lo que este tipo de cirugia puede ser llevada a cabo por un solo medico, que puede ser cirujano o no. En general, la persona puede volver a su domicilio el mismo dia de la intervencion quirurgica menor.</P>
+     
+ <p align="justify">La cirugia menor se define como el conjunto de tecnicas quirurgicas de corta duracion que se aplican generalmente sobre estructuras superficiales. Suelen requerir la aplicaciin de anestesia local y su realizacion conlleva riesgo bajo y minimas complicaciones. 
+ Otras definiciones de que es la cirugia menor la podemos encontrar en la Sociedad Española de Medicos de Atencion Primaria (SEMERGEN) donde define la Cirugia Menor como un conjunto de tecnicas o intervenciones quirurgicas que se realizan sobre la superficie corporal y que de forma sencilla pueden solucionar toda una serie de lesiones 
+ traumaticas o en la mayoria de los casos de naturaleza benigna y alteraciones del tejido subcutaneo que de no resolverse a tiempo pueden causar problemas de salud mas graves, provocando serios problemas a veces sin resoluciin, precisando comenmente la aplicacion de anestesia local. Cada experto puede dar su propia definicion de que es y en que consiste la 
+ cirugia menor pero todos coinciden en los fundamentos basicos.</p>
+
+ <div style="text-align:center;">
+  <img src="IMAGENES/cirugiamenor.jpg" style="width:450px; padding:80px;">
+ </div>
+ <p align="justify">Con frecuencia surgen problemas que requieren para su diagnostico o tratamiento, utilizar estos procedimientos. Por ello, la cirugia menor esta dentro del campo de conocimientos y competencias del medico de familia y comunitaria y de las enfermeras en general, como una herramienta costo-efectiva mas para una practica profesional de calidad, tanto en la atencion programada 
+ (escision de lesiones cutuneas) como en las urgencias (sutura de heridas o drenaje de abscesos).</p>
+
+ <p align="justify">El factor limitante para la excelencia en la cirugia menor es la capacitacion tecnica de los profesionales sanitarios incluyendo medico y enfermera que realiza estas tecnicas de cirugia menor. Por otra parte, la cirugia menor no esta exenta de riesgos tanto durante la intervencion como despues de esta. Por ello, es imprescindible realizar una correcta tecnica quirurgica  y una indicacion adecuada, ofreciendo una informacion clara, 
+ concisa y completa al paciente, que quedara plasmada con el consentimiento informado.<p>
+
+  <div style="text-align:center;">
+    <img src="IMAGENES/cirugiamenor1.jpg" style="width:500px; padding:100px;"/>
+   </div>
+
+ <p><b><a href="INSTRUMENTACION GENERAL.html">INSTRUMENTACION BASICA PARA CIRUGIA MENOR</a></b></p>
+
+
+ <p>Esta formada por:</p>
+    
+  
+ <ol>
+ <li>Bisturi.</li>
+ <li>Tijeras.</li>
+ <li>Pinzas de diseccion.</li>
+ <li>Porta-agujas.</li>
+ <li>Pinzas de Hemostasia.</li>
+ <li>Material fungible.</li>
+ <li>Cureta.</li>
+ <li>Punch para biopsia.</li>
+ <li>Electrobisturi.</li>
+ <li>Equipo de criocirugia.</li>
+ <li>Separadores quirurgicos.</li>
+ </ol>
+</div>
+  
+</section>
+<ul>
+<li style="--i:#a955ff;--j:#ea51ff;">
+  <span class="icon"><i class="fa fa-facebook"></i></span>
+  <a href="https://es-la.facebook.com/"target="_blak" span class="titulo">facebook</a></span>
+</li>
+
+<li style="--i:#56CCF2;--j:#2F80ED;">
+  <span class="icon"><i class="fa fa-twitter"></i></span>
+  <a href="https://twitter.com/i/flow/login?input_flow_data=
+  %7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D
+  "target="_blak" span class="titulo">twitter</a></span>
+  
+</li>
+
+<li style="--i:#86be6b;--j:#1baf16;">
+  <span class="icon"><i class="fa fa-whatsapp"></i></span>
+ <a href="https://web.whatsapp.com/" target="_blank"span class="titulo">whatsapp</a></span>
+</li>
+
+<li style="--i:#80FF72;--j:#5ec3d4;">
+  <span class="icon"><i class="fa fa-linkedin"></i></span>
+  <a href="https://www.linkedin.com/login/es"target="_blak" span class="titulo">linkedin</a></span>
+</li>
+
+ <li style="--i:#FFA9C6;--j:#F434E2;">
+  <span class="icon"><i class="fa fa-instagram"></i></span>
+  <a href="https://www.instagram.com/"target="_blak"span class="titulo">instagrama</a></span>
+</li>
+</ul>
+  
+
+</body>
+</html>

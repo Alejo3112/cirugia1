@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origen De La Cirugia</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+     *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+     body{
+        background: #11998e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    p{
+        padding: 0 2rem;
+        font-size: 1.33rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+
+    }
+
+    h1{
+            font-size: 3rem;
+            position: relative;
+            padding:2%
+        }
+
+    .border{
+            color: black;
+            text-shadow: 
+              -1px -1px 0 white,
+               1px -1px 0 White,
+               1px 1px 0  white,
+               -1px 1px 0 white;
+        }
+
+        .tarjeta{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            margin: 0 20px;
+           
+           
+           
+        }
+
+        .tarjeta figure{
+            position: relative;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .tarjeta figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+        }
+
+        .tarjeta figure .capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,103,123,0.7);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+
+        .tarjeta figure:hover > .capa{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .tarjeta figure:hover > .capa h3{
+            margin-top: 70px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta figure:hover  img{
+            transform: scale(1.3);
+        }
+
+        .tarjeta figure:hover .capa h3{
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 20px;
+            transition: all 500ms ease-out;
+            margin-top: 30px;
+        }
+        .tarjeta figure .capa p{
+            color: #fff;
+            font-size: 15px;
+            line-height: 1.5;
+            width: 100%;
+            max-width: 220px;
+            margin: auto;
+        }
+
+        .wrapper{
+        position: relative;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 550px;
+    }
+
+    .wrapper ul{
+        list-style: none;
+    }
+
+    .wrapper ul li{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 15px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid #d8e2dc;
+        float: left;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li .fa{
+        color: #d8e2dc;
+        margin-top: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.facebook{
+        border: 5px solid #3b5998;
+        box-shadow: 0 0 15px #3b5998;
+        transition: all 0.5 ease;
+    }
+
+    .wrapper ul li:hover .fa-facebook{
+        color: #3b5998;
+        text-shadow: 0 0 15px #3b5998;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.twitter{
+        border: 5px solid #00aced;
+        box-shadow: 0 0 15px #00aced;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.fa-twitter{
+        color: #00aced;
+        text-shadow: 0 0 15px #00aced;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.instagram{
+        border: 5px solid #bc2a8d;
+        box-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.fa-instagram{
+        color: #bc2a8d;
+        text-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.google{
+        border: 5px solid #dd4b39;
+        box-shadow: 0 0 15px #dd4b39;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.fa-google{
+        color: #dd4b39;
+        text-shadow: 0 0 15px #dd4b39;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.whatsapp{
+        border: 5px solid #4dc247;
+        box-shadow: 0 0 15px #4dc247;
+        transition: all 0.5s ease;
+    }
+
+    .wrapper ul li:hover.fa-whatsapp{
+        color: #4dc247;
+        text-shadow: 0 0 15px #4dc247;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 640px){
+        .wrapper{
+            width: 350px;
+        }
+        .wrapper ul li{
+            margin-top: 10px;
+        }
+        .wrapper ul li.google{
+            margin-left: 60px;
+        }
+    }
+    .fcc-btn{
+        background-color: #bc2a8d;
+        color: white;
+        padding: 10px 10px;
+        text-decoration: none;
+        float: left;
+
+
+        }
+
+    .fcc-btn:hover{
+        background-color: #5111e6;
+    }
+
+
+
+
+</style>
+</head>
+<body> 
+    <section>
+        <center><h1 class="border">ORIGEN DE LA CIRUGIA</h1></center>
+
+        <p>Si bien es cierto que el comienzo de la cirugía se
+            remonta a los anales de la historia del propio ser humano, no es menos cierto que debemos diferenciar
+            claramente el punto de in exión que marca un antes
+            y un después en la práctica quirúrgica. Este punto de
+            in exión se produjo en el siglo XIX, donde el descubrimiento de la anestesia en primer término, y de la
+            antisepsia posteriormente constituyeron dos verdaderos hitos que habrían de catapultar a la cirugía para
+            alcanzar los niveles de especialización de los que hoy
+            gozamos tan solo 150 años después</p>
+
+            <p>La cirugía no siempre se ha considerado una
+                práctica médica y desde luego en la antigüedad no
+                gozaba del prestigio merecido que hoy tiene. Esto se
+                debía fundamentalmente a las limitaciones que durante miles de años estuvieron vigentes y procuraron
+                a los actos quirúrgicos un halo de oscurantismo y de
+                muerte que causaba no pocos problemas a los que
+                por entonces se atrevían a practicarla desai ando así
+                las leyes de la naturaleza con el simple uso de sus
+                manos (keiros – cheiros – mano / ergos – trabajo =
+                trabajo manual). La separación entre cirujanos y médicos se hizo ya patente en la sociedad romana donde
+                existían dos clases de médicos: los medici chirurgici y
+                los medici clinici1
+                . Esta separación se consolidó en la
+                Edad Media donde la cirugía no formaba parte de la
+                formación reglamentada de los médicos que comenzó en el albor de las universidades15. Solo los avances
+                en el campo de la anatomía, que comentaremos más
+                adelante, facilitaron la aproximación de la medicina y
+                la cirugía, practicada por entonces por los cirujanos
+                barberos y los practicantes, hasta su unión dentro de
+                una misma disciplina médica unos siglos después</p>
+
+                
+
+    </section>
+
+    <div class="tarjeta">
+        <figure>
+            <img src="IMAGENES/ORIGEN1.jpg">
+            <div class="capa">
+                <h3>UNA MASTECTOMIA EN VIVO EN 1811</h3>
+                <p>Recreación de la demostración de anestesia 
+                    con éter por W.T.G. Morton el 16 de octubre 
+                    de 1846. Crédito: Southworth & Hawes</p>
+            </div>
+        </figure>
+        <figure>
+            <img src="IMAGENES/ORIGEN2.jpg" alt="">
+            <div class="capa">
+                <h3>EL ÉTER Y UN CONCIENZUDO MÉDICO RURAL</h3>
+                <p>Un viejo matraz metálico de éter. Crédito: 
+                    Łukasz Karolewski</p>
+            </div>
+        </figure>
+        <figure>
+            <img src="IMAGENES/ORIGEN3.jpg" alt="">
+            <div class="capa">
+                <h3>UN INVENTO DEL DIABLO</h3>
+                <p>Robert Liston fue el primero en emplear la anestesia 
+                    en Europa. Crédito: Wellcome images</p>
+            </div>
+        </figure>
+ </div>
+ <a class="fcc-btn" href="BOTONES.html">IR A PRINCIPAL</a>
+    
+ <div class="wrapper">
+    <ul>
+         <li class="facebook"><a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+         <li class="twitter"><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li> 
+         <li class="instagram"><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li> 
+         <li class="google"><a href="https://www.google.com.mx/?hl=es" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li> 
+         <li class="whatsapp"><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>  
+    </ul>
+</div>
+
+
+</body>
+</html>
